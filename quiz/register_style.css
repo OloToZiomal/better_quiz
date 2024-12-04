@@ -1,0 +1,123 @@
+/* Ustawienia dla całej strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Kontener formularza */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Nagłówek formularza */
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3e50;
+}
+
+/* Style dla inputów */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #185ee0;
+    outline: none;
+}
+
+/* Przycisk rejestracji */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #185ee0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f5dbf;
+}
+
+/* Linki do zmiany języka */
+.language-links {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+}
+
+.language-links a {
+    color: #185ee0;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.language-links a:hover {
+    text-decoration: underline;
+}
+
+/* Przycisk logowania */
+.login-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #31b0d5;
+}
+
+/* Responsywność dla małych ekranów */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button,
+    .login-btn {
+        font-size: 14px;
+    }
+}
